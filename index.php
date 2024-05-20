@@ -34,7 +34,7 @@ include('functions/common_function.php');
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="index.php">Home</a>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link" href="#">Products</a>
         </li>
         <li class="nav-item">
@@ -42,7 +42,7 @@ include('functions/common_function.php');
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Contact</a>
-        </li>
+        </li> -->
         <li class="nav-item">
           <a class="nav-link" href="cart.php"><i class="fa-solid fa-cart-shopping"></i><sup><?php
           cart_item();?>
