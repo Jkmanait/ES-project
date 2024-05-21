@@ -72,6 +72,9 @@ cart();
           <a class="nav-link" href="#">Welcome Guest</a>
     </li>
     <li class="nav-item">
+          <a class="nav-link" href="#">Zyledrix's Location</a>
+    </li>
+    <li class="nav-item">
           <a class="nav-link" href="./user_area/user_login.php">Login</a>
     </li>
     </ul>
