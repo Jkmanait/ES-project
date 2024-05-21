@@ -29,8 +29,8 @@ while($row=mysqli_fetch_assoc($result_query)){
             <h5 class='card-title'>$product_title</h5>
             <p class='card-text'>$product_description</p>
             <p class='card-text'>Price: ₱$product_price</p>
-            <a href='index.php?Add_to_cart=$product_id' class='btn btn-primary'>Add To Cart</a>
-            <a href='#' class='btn btn-secondary'>Buy Now</a>
+            
+            <a href='#' class='btn btn-secondary'>View Details</a>
             </div>
 </div>
 </div>";
