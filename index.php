@@ -23,16 +23,16 @@ include('functions/common_function.php');
     <!-- navbar -->
     <div class="container-fluid p-0">
         <!-- first child -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-info">
-  <div class="container-fluid">
-    <img src="./images/logo.png" alt="" class="logo">
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark navbar-dark">
+  <div class="container-fluid" >
+    <img src="./images/logo.jpg" alt="" class="logo">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+          <a class="nav-link active" aria-current="page" href="index.php" >Home</a>
         </li>
         <!-- <li class="nav-item">
           <a class="nav-link" href="#">Products</a>
@@ -102,10 +102,13 @@ get_unique_brands();
 </div>
 <!-- col end -->
 </div>
+
+  
+
   <div class="col-md-2 bg-secondary p-0">
     <!-- brands to be displayed -->
     <ul class="navbar-nav me-auto text-center">
-      <li class="nav-item bg-info">
+      <li class="nav-item bg-dark">
         <a href="#" class="nav-link text-light"><h4>Delivery Brands</h4></a>
       </li>
       <?php
@@ -115,7 +118,7 @@ getbrands();
 
     <!-- categories to be displayed -->
     <ul class="navbar-nav me-auto text-center">
-      <li class="nav-item bg-info">
+      <li class="nav-item bg-dark">
         <a href="#" class="nav-link text-light"><h4>Categories</h4></a>
       </li>
       <?php
