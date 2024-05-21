@@ -103,7 +103,6 @@ get_unique_brands();
 <!-- col end -->
 </div>
 
-  
 
   <div class="col-md-2 bg-secondary p-0">
     <!-- brands to be displayed -->
@@ -129,7 +128,7 @@ getcategories();
 </div>
 
 <!-- last child -->
-<div class="bg-info p10 text-center">
+<div class="bg-dark p10 text-center text-light">
     <p>All rights reserved</p>
 </div>
 <!-- boostrap js link -->
