@@ -34,23 +34,23 @@ include('functions/common_function.php');
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="index.php" >Home</a>
         </li>
-        <!-- <li class="nav-item">
-          <a class="nav-link" href="#">Products</a>
-        </li>
         <li class="nav-item">
+          <a class="nav-link" href="/ES-Project/location.html">Zyledrix's Location</a>
+    </li>
+        <!-- <li class="nav-item">
           <a class="nav-link" href="#">Register</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Contact</a>
         </li> -->
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link" href="cart.php"><i class="fa-solid fa-cart-shopping"></i><sup><?php
           cart_item();?>
           </sup></a>
-        </li>
-        <li class="nav-item">
+        </li> -->
+        <!-- <li class="nav-item">
           <a class="nav-link" href="#">Total Price: ₱<?php total_cart_price();?></a>
-        </li>
+        </li> -->
       </ul>
       <form class="d-flex" action="search_product.php" method="get">
         <input class="form-control me-2" type="search" 
@@ -68,12 +68,12 @@ cart();
 <!-- second child -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
     <ul class="navbar-nav me-auto">
-    <li class="nav-item">
+    <!-- <li class="nav-item">
           <a class="nav-link" href="#">Welcome Guest</a>
     </li>
     <li class="nav-item">
           <a class="nav-link" href="/ES-Project/location.html">Zyledrix's Location</a>
-    </li>
+    </li> -->
     <li class="nav-item">
           <a class="nav-link" href="./user_area/user_login.php">Login</a>
     </li>

@@ -1,3 +1,8 @@
+<!-- connect file -->
+<?php
+include('includes/connect.php');
+include('functions/common_function.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,23 +34,23 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="index.php" >Home</a>
         </li>
-        <!-- <li class="nav-item">
-          <a class="nav-link" href="#">Products</a>
-        </li>
         <li class="nav-item">
+          <a class="nav-link" href="/ES-Project/location.html">Zyledrix's Location</a>
+    </li>
+        <!-- <li class="nav-item">
           <a class="nav-link" href="#">Register</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Contact</a>
         </li> -->
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link" href="cart.php"><i class="fa-solid fa-cart-shopping"></i><sup><?php
           cart_item();?>
           </sup></a>
-        </li>
-        <li class="nav-item">
+        </li> -->
+        <!-- <li class="nav-item">
           <a class="nav-link" href="#">Total Price: ₱<?php total_cart_price();?></a>
-        </li>
+        </li> -->
       </ul>
       <form class="d-flex" action="search_product.php" method="get">
         <input class="form-control me-2" type="search" 
@@ -57,18 +62,18 @@
 </nav>
 
 <!-- calling cart funstion -->
-<?php
+<!-- <?php
 cart();
-?>
+?> -->
 <!-- second child -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
     <ul class="navbar-nav me-auto">
-    <li class="nav-item">
+    <!-- <li class="nav-item">
           <a class="nav-link" href="#">Welcome Guest</a>
     </li>
     <li class="nav-item">
           <a class="nav-link" href="/ES-Project/location.html">Zyledrix's Location</a>
-    </li>
+    </li> -->
     <li class="nav-item">
           <a class="nav-link" href="./user_area/user_login.php">Login</a>
     </li>
@@ -78,10 +83,11 @@ cart();
 <!-- third child -->
 <br>
 <div class="bg-light">
-    <h3 class="text-center">Welcome to Zyledrix</h3>
-    <p class="text-center">Gadgets Hub and Accesories</p>
+    <h3 class="text-center">Zyledrix's Location</h3>
+    <!-- <p class="text-center">Gadgets Hub and Accesories</p> -->
 </div>
 <br>
+
 <iframe src="https://www.google.com/maps/embed?pb=!3m2!1sen!2sph!4v1716299514119!5m2!1sen!2sph!6m8!1m7!1sW7oerJFibqzChUb0CeKyyA!2m2!1d8.364945622164678!2d124.8654715870835!3f281.17821973061643!4f-0.007166242085020258!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3947.3727513619083!2d124.86282077414633!3d8.364943699031766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32ffbdf906672e67%3A0x339cea51b4f6a82!2sZYLEDRIX%20CELLSHOPPE%20%26%20ACCESSORIES%20-CIGNAL%20DEALER!5e0!3m2!1sen!2sph!4v1716298733360!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
