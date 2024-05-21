@@ -157,7 +157,7 @@ while($row=mysqli_fetch_assoc($result_query)){
             </div>
             <!-- submit -->
             <div class="form-outline mb-4 w-50 m-auto">
-                <input type="submit" name="insert_product" class="btn btn-info mb-3 px-3" value="Insert Product">
+                <input type="submit" name="insert_product" class="btn btn-dark mb-3 px-3" value="Insert Product">
             </div>
         </form>
     </div>

@@ -28,13 +28,13 @@
     <!-- navbar -->
     <div class="container-fluid p-0">
         <!-- first child -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-info">
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
             <div class="container-fluid">
-                <img src="../images/logo.png" alt="" class="logo">
+                <img src="../images/logo.jpg" alt="" class="logo">
                 <nav class="navbar navbar-expand-lg">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a href="" class="nav-link">Welcome Guest</a>
+                            <a href="" class="nav-link">Welcome Admin</a>
                         </li>
                     </ul>
                 </nav>
@@ -42,7 +42,7 @@
         </nav>
 
         <!-- second child -->
-        <div class="bg light">
+        <div class="bg dark">
             <h3 class="text-center p-2">Manage Details</h3>
         </div>
 
@@ -57,13 +57,13 @@
                 <!-- button*4>a.nav-link.text-light.bg-info.my-1 -->
                 <div class="button text-center">
                     <button class="my-3"><a href="insert_product.php" class="nav-link text-light 
-                    bg-info my-1">Insert Products</a></button>
+                    bg-dark my-1">Insert Products</a></button>
                     <button><a href="index.php?insert_category" class="nav-link text-light 
-                    bg-info my-1">Insert Categories</a></button>
+                    bg-dark my-1">Insert Categories</a></button>
                     <button><a href="index.php?insert_brand" class="nav-link text-light 
-                    bg-info my-1">Insert Brands</a></button> 
-                    <button><a href="" class="nav-link text-light 
-                    bg-info my-1">Logout</a></button>                 
+                    bg-dark my-1">Insert Brands</a></button> 
+                    <!-- <button><a href="" class="nav-link text-light 
+                    bg-info my-1">Logout</a></button>                  -->
                 </div>
             </div>
         </div>
@@ -82,7 +82,7 @@
     </div>
 
 <!-- last child -->
-<div class="bg-info p10 text-center footer">
+<div class="bg-dark p10 text-center footer">
     <p>All rights reserved</p>
 </div>
 
