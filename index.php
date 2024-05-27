@@ -84,7 +84,7 @@ cart();
 <br>
 <div class="bg-light">
     <h3 class="text-center">Welcome to Zyledrix</h3>
-    <p class="text-center">Gadgets Hub and Accesories</p>
+    <p class="text-center">Available Phone and Accesories</p>
 </div>
 
 <!-- fourth child -->

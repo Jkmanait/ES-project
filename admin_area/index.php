@@ -41,6 +41,15 @@
             </div>
         </nav>
 
+        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+    <ul class="navbar-nav me-auto">
+
+    <li class="nav-item">
+          <a class="nav-link" href="../user_area/user_login.php">Login</a>
+    </li>
+    </ul>
+</nav>
+
         <!-- second child -->
         <div class="bg dark">
             <h3 class="text-center p-2">Manage Details</h3>
@@ -52,7 +61,7 @@
                 <div class="px-5">
                     <a href="#"><img src="../images/admin.png" 
                     alt="" class="admin_image"></a>
-                    <p class="text-light text-center">Admin Name</p>
+                    <p class="text-light text-center">Admin</p>
                 </div>
                 <!-- button*4>a.nav-link.text-light.bg-info.my-1 -->
                 <div class="button text-center">
