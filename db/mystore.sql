@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 20, 2024 at 03:51 PM
+-- Generation Time: May 28, 2024 at 04:56 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.0.28
 
@@ -37,15 +37,9 @@ CREATE TABLE `brands` (
 --
 
 INSERT INTO `brands` (`brand_id`, `brand_title`) VALUES
-(1, 'bench'),
-(2, 'nike'),
-(3, 'adidas'),
-(4, 'Chanel'),
-(5, 'Louis Vuitton'),
-(6, 'Gucci'),
-(7, 'rebook'),
-(8, 'Champion'),
-(9, 'sadas');
+(10, 'Real Me'),
+(11, 'Samsung'),
+(12, 'Apple');
 
 -- --------------------------------------------------------
 
@@ -58,17 +52,6 @@ CREATE TABLE `cart_details` (
   `ip_address` varchar(255) NOT NULL,
   `quantity` int(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `cart_details`
---
-
-INSERT INTO `cart_details` (`product_id`, `ip_address`, `quantity`) VALUES
-(29, '::1', 0),
-(31, '::1', 0),
-(33, '::1', 0),
-(34, '::1', 0),
-(35, '::1', 0);
 
 -- --------------------------------------------------------
 
@@ -86,17 +69,8 @@ CREATE TABLE `categories` (
 --
 
 INSERT INTO `categories` (`category_id`, `category_title`) VALUES
-(1, 'jacket'),
-(2, 'shoes'),
-(3, 'dress'),
-(4, 'pants'),
-(5, 'shorts'),
-(6, 'hoodies'),
-(7, 'polo shirt'),
-(8, 'Bags'),
-(9, 't-shirt'),
-(10, 'Eye glasses'),
-(11, 'asdasd');
+(12, 'Phone'),
+(13, 'Earpuds');
 
 -- --------------------------------------------------------
 
@@ -124,30 +98,30 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`product_id`, `product_title`, `product_description`, `product_keywords`, `category_id`, `brand_id`, `product_image1`, `product_image2`, `product_image3`, `product_price`, `date`, `status`) VALUES
-(29, 'Back pack', 'Yellow Back Pack', 'Back pack Bag', 8, 5, 'b3.png', 'b2.png', 'b1.png', '300', '2023-12-11 14:00:19', 'true'),
-(31, 'Men\'s Short', 'Black Men\'s Short', 'Black Men\'s Short', 5, 5, 'i1.png', 'i1.png', 'i1.png', '250', '2023-12-18 11:02:00', 'true'),
-(32, 'Hoodies', 'Champion Gray Hoodies', 'Champion Gray Jacket', 6, 8, 'h3.png', 'h3.png', 'h3.png', '350', '2023-12-18 11:04:10', 'true'),
-(33, 'Women\'s Bag', 'Red Bag', 'Women\'s Red  Bag', 8, 4, 'lb1.png', 'lb1.png', 'lb1.png', '450', '2023-12-18 11:05:59', 'true'),
-(34, 'Long Sleeve', 'Men\'s Long Sleeve', 'Men\'s Long Sleeve', 1, 6, 'p6.png', 'p6.png', 'p6.png', '399', '2023-12-18 11:07:51', 'true'),
-(35, 'Black Shoes', 'Men\'s Black Shoes', 'Men\'s Black Shoes', 2, 7, 's1.png', 's1.png', 's1.png', '499', '2023-12-18 11:11:15', 'true'),
-(36, 'qweqwe', 'wqe', 'we', 2, 2, 'b3.png', 'b3.png', 'b3.png', '124', '2024-01-04 11:13:31', 'true');
+(37, 'Realme', 'Realme C11', 'Realme phone', 12, 10, 'realme-C11.jpg', 'realme-C11.jpg', 'realme-C11.jpg', '11,999', '2024-05-28 14:44:52', 'true'),
+(38, 'Earpuds', 'Wireless Earpuds', 'Wireless Earpuds Iphone', 13, 12, 'earpuds2.jpg', 'earpuds2.jpg', 'earpuds2.jpg', '4,999', '2024-05-28 14:46:02', 'true');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user_table`
+-- Table structure for table `users`
 --
 
-CREATE TABLE `user_table` (
-  `user_id` int(11) NOT NULL,
-  `username` varchar(100) NOT NULL,
-  `user_email` varchar(100) NOT NULL,
-  `user_password` varchar(255) NOT NULL,
-  `user_image` varchar(255) NOT NULL,
-  `user_ip` varchar(100) NOT NULL,
-  `user_address` varchar(255) NOT NULL,
-  `user_mobile` int(20) NOT NULL
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL,
+  `username` varchar(50) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `created_at` datetime DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `username`, `password`, `created_at`) VALUES
+(0, 'addmin', '$2y$10$Lp39YuK4rLy8i9exSqdcpOHkWoDezvoB8ZA3IuZ6jc5jSxaSIPAjm', '2024-05-28 22:50:47'),
+(0, 'jimjim', '$2y$10$GK1TeQXNK5e308QpSAWp1Ox4CPE.nAx7ACpGtfYZfZPR1f6Hp.yFK', '2024-05-28 22:51:16'),
+(0, 'hahahaha', '$2y$10$.1VsORYl8uEiTo3zaWtuGOTRAlUfEUl6v9XCXq3l/Ej6GKpq9yboC', '2024-05-28 22:55:13');
 
 --
 -- Indexes for dumped tables
@@ -181,12 +155,6 @@ ALTER TABLE `products`
   ADD KEY `brand_id` (`brand_id`);
 
 --
--- Indexes for table `user_table`
---
-ALTER TABLE `user_table`
-  ADD PRIMARY KEY (`user_id`);
-
---
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -194,25 +162,19 @@ ALTER TABLE `user_table`
 -- AUTO_INCREMENT for table `brands`
 --
 ALTER TABLE `brands`
-  MODIFY `brand_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `brand_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
-
---
--- AUTO_INCREMENT for table `user_table`
---
-ALTER TABLE `user_table`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 
 --
 -- Constraints for dumped tables
